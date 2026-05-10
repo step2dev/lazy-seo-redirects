@@ -12,9 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class HandleSeoRedirects
 {
-    public function __construct(protected RedirectSafety $safety)
-    {
-    }
+    public function __construct(protected RedirectSafety $safety) {}
 
     public function handle(Request $request, Closure $next): Response
     {
